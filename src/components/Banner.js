@@ -4,7 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-
+import {Link} from 'react-router-dom';
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -60,7 +60,7 @@ const Banner = () => {
                   <p>I am Suryansh Goel, a first year undergraduate, pursuing B.Tech in Electrincal Engineering at Indian Institute of Technology Kanpur. 
                     This is my portfolio website. Get to know my Skills and Projects.
                   </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button><Link to="/contact">Let’s Connect <ArrowRightCircle size={25} /></Link></button>
               </div>}
             </TrackVisibility>
           </Col>

@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -42,15 +43,16 @@ const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="/" className="navbar-link">Home</Nav.Link>
+              <Nav.Link href="/skills" className="navbar-link">Skills</Nav.Link>
+              <Nav.Link href="/projects" className="navbar-link">Projects</Nav.Link>
+              <Nav.Link href="/contact" className="navbar-link">Connect</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/suryansh-goel-0194b424b/"><img src={navIcon1} alt="LinkedIn" /></a>
+                <a href="https://www.facebook.com/profile.php?id=100086898699551"><img src={navIcon2} alt="Facebook" /></a>
+                <a href="https://www.instagram.com/suryanshgoel6/"><img src={navIcon3} alt="Instagram" /></a>
               </div>
             </span>
           </Navbar.Collapse>

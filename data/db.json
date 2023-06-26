@@ -1,0 +1,11 @@
+{
+    "blogs": [
+        {
+            "firstName": "Suryansh",
+            "lastName": "Goel",
+            "email": "sgoel1811@gmail.com",
+            "phone": "7428731829",
+            "message": "The site is up and running!"
+        }
+    ]
+}
