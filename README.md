@@ -1,6 +1,6 @@
 # My Portfolio Website
-
-
+This is my website portfolio. It is built using ReactJS. It is a responsive website that can be viewed on any device.
+Website link: https://surya2003-real.github.io/my-portfolio/
 
 ### Launch JSON server
     npx json-server --watch data/db.json --port 8000
