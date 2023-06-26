@@ -57,7 +57,7 @@ const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">My Limit is Beyond the Sky</span>
                 <h1>{`Hi! I'm Suryansh Goel `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am Suryansh Goel, a first year undergraduate, pursuing B.Tech in Electrincal Engineering at Indian Institute of Technology Kanpur. 
+                  <p>Hi, I am Suryansh Goel, currently pursuing B.Tech in Electrical Engineering at Indian Institute of Technology Kanpur. 
                     This is my portfolio website. Get to know my Skills and Projects.
                   </p>
                   <button><Link to="/contact">Let’s Connect <ArrowRightCircle size={25} /></Link></button>
