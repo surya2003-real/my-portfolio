@@ -11,15 +11,13 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Router>
         <Routes>
-          <Route path="/" element={<Banner />} />
+          <Route exact path="/" element={<Banner />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
-      </Router>
       <Footer />
     </div>
   );
