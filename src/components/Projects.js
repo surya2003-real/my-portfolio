@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import web3 from "../assets/img/Web3.0.jpg";
+import webdev from "../assets/img/WebDev.jpg";
+import matht from "../assets/img/MathematicalTrading.jpg";
+import coursehelp from "../assets/img/coursehelp.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,33 +14,39 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Web3.0",
+      description: "Blockchain & Cryptocurrency",
+      GithubLink: "https://github.com/Mastering-Web3/assignment-3a-surya2003-real",
+      imgUrl: web3,
+    },
+    {
+      title: "Mathematical Trading Strategies",
+      description: "Algorithmic Trading",
+      GithubLink: "https://github.com/surya2003-real/Mathematical-Trading-Strategies",
+      imgUrl: matht,
+    },
+    {
+      title: "Web Development",
+      description: "Frontend & Backend",
+      GithubLink: "https://github.com/surya2003-real/my-portfolio",
+      imgUrl: webdev,
+    },
+    {
+      title: "Solve for IITK",
+      description: "CourseHelp Website",
+      GithubLink: "https://github.com/surya2003-real/IITK-Course-Guide",
+      imgUrl: coursehelp,
+    },
+    {
+      title: "Clickbait Generator",
+      description: "NLP & API",
+      GithubLink: "https://github.com/surya2003-real/clickbait-generator-website",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Static Site generator",
+      description: "Building my own SSG from scratch",
+      GithubLink: "https://github.com/surya2003-real/static-site-generator",
       imgUrl: projImg3,
     },
   ];
@@ -51,7 +60,10 @@ const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>These are few of my projects. 
+                  Hover over the cards to see the project description 
+                  and click on them to visit the Github repository.
+                </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -92,7 +104,7 @@ const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="bg"></img>
     </section>
   )
 }

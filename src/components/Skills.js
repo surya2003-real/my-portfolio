@@ -1,12 +1,16 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import CV from "../assets/img/computerVision.jpg";
+import Web3 from "../assets/img/Web3.0.jpg";
+import micro from "../assets/img/microelectronics.jpg";
+import AI from "../assets/img/AI-ML.jpg";
+import webdev from "../assets/img/WebDev.jpg";
+import CP from "../assets/img/CP.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import Button from 'react-bootstrap/Button';
+import {LinkContainer} from 'react-router-bootstrap';
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
 const Skills = () => {
     const responsive = {
         superLargeDesktop: {
@@ -33,36 +37,48 @@ const Skills = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
+                            <TrackVisibility>
+                            {({ isVisible }) =>
+                            <div class="animate__animated animate__rollIn animate_slower">
                             <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p>I have acquired the following skills through various projects.<br></br>For more information download my CV.</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={webdev} alt="Webdev" />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
+                                    <img src={AI} alt="AIML" />
+                                    <h5>Artificial Intelligence and Machine Learning</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <img src={CP} alt="CP" />
+                                    <h5>Competitive Programming</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <img src={CV} alt="CV" />
+                                    <h5>Computer Vision</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Web3} alt="Web3" />
+                                    <h5>Web 3.0</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={micro} alt="electronics" />
+                                    <h5>Microelectronics</h5>
                                 </div>
                             </Carousel>
-                            <div className="d-grid gap-2">
-                                <Button href="/contact" variant="primary" size="lg" id='btn'>
+                                <LinkContainer to="/contact"><Button variant="primary" size="lg" id='btn'>
                                     Link to CV
                                 </Button>
-                            </div>
+                                </LinkContainer>
+                            </div>}
+                            </TrackVisibility>
                         </div>
                     </div>
                 </div>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
+            <img className="background-image-left" src={colorSharp} alt="backg" />
         </section>
     );
 }

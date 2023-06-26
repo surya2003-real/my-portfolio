@@ -326,7 +326,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background-image: url('./assets/img/bgproj.jpg');
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -364,9 +364,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-image: url('./assets/img/bgproj.jpg');
+  background-position: top center;
 }
 .project h2 {
+  
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
@@ -477,6 +479,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.proj-txtx Button {
+  margin-top: 10px;
+  font-style: bold;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  background: linear-gradient(90.21deg, #fdc701 0%, #ffffff 50%, #fd9103 100%);
+  border: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -488,8 +501,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background-image: url('./assets/img/bgproj.jpg');
   padding: 60px 0 200px 0;
+  background-size: cover;
 }
 .contact img {
   margin-top: 100px;
@@ -642,22 +656,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* button styling */
 
 #btn{
+  margin-top: 30px;
   border: none;
   /* position: relative; */
   height: 100%;
+  font-weight: 600;
+  font-size: 27px;
   /* width: 300%; */
   left: -100%;
   /* z-index: -1; */
   transition: all .4s;
-  background: linear-gradient(122.3deg, rgb(123, 210, 248) 14.6%, rgb(232, 129, 166) 29.6%, rgb(237, 237, 183) 42.1%, rgb(244, 166, 215) 56.7%, rgb(154, 219, 232) 68.7%, rgb(238, 226, 159) 84.8%);
+  background: linear-gradient(122.3deg, rgb(60, 73, 255) 0%, rgb(254, 255, 255) 50%, rgb(0, 135, 254) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 #btn:hover{
   left: 0;
-}
-.d-grid{
-  margin-top: 40px;
 }
 .notfound{
   margin: 300px 700px 265px 600px;
