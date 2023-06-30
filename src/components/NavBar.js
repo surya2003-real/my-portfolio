@@ -29,7 +29,7 @@ const NavBar = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/suryansh-goel-0194b424b/"><img src={navIcon1} alt="LinkedIn" /></a>
               <a href="https://www.facebook.com/profile.php?id=100086898699551"><img src={navIcon2} alt="Facebook" /></a>
-              <a href="https://www.instagram.com/suryanshgoel6/"><img src={navIcon3} alt="Instagram" /></a>
+              <a href="https://www.instagram.com/suryanshg007/"><img src={navIcon3} alt="Instagram" /></a>
             </div>
           </span>
         </Navbar.Collapse>
